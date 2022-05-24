@@ -52,13 +52,34 @@ function App() {
          <RestaurantDetails key={item.id} {...item}></RestaurantDetails>
        )}
      </div>
-     <div>
+     <div >
        <button disabled={page===1} onClick={() => setPage(page-1)}>PREV</button>
+       <PaginationComponent currentPage={page} lastPage={5} onPageChange={setPage}></PaginationComponent>
        <button onClick={() => setPage(page+1)}>NEXT</button>
        
      </div>
     </div>
   )
 }
+
+const PaginationComponent = ({
+  currentPage,
+  lastPage,
+  onPageChange
+}) =>{
+  const arr = new Array(lastPage).fill(0);
+  return(
+    <div>
+      <div>
+        {arr.map((item, page) =><button onClick={() =>onPageChange(page +1)} disabled={(page+1 )=== currentPage} >{page}</button>)}
+      </div>
+    </div>
+  )
+}
+
+
+
+
+
 
 export default App
