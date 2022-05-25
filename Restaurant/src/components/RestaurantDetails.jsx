@@ -5,7 +5,8 @@ function RestaurantDetails({
     votes,
     reviews,
     cuisine:  tags,      //renaming
-    rating
+    rating, 
+    payment
 }){
     return (
         <div style={{display:"flex" , gap : "2rem", border: " 3px solid black" , padding: "1rem" , margin :"0.5rem"}}>
@@ -17,6 +18,7 @@ function RestaurantDetails({
                 <div>{name}</div>
                 <div>{tags}</div>
                 <div>Cost ₹{cost}</div>
+                <div>Accepts {JSON.stringify(payment)}</div>
             </div>
 
             <div>
