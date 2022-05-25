@@ -1,15 +1,752 @@
 {
-    "food" : [
+  "food" : [
         {"_id":"62875ae21ffce0581c52ef5e",
         "name":"Aanand Hotel",
         "cuisine":"American",
         "cost":200,
         "minPrice":50,
-        "paymentMethods":"Accepts card payments only",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+            },
         "rating":4.2,"votes":567,"reviews":467,
         "image":"https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg",
-        "id":5},
-        
-        {"_id":"62875ae21ffce0581c52ef5f","name":"Fab Hotel","cuisine":"Italian","cost":300,"minPrice":100,"paymentMethods":"Accepts card payments only","rating":3.6,"votes":231,"reviews":345,"image":"https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg","id":6},{"_id":"62875ae21ffce0581c52ef60","name":"Trebo Hotel","cuisine":"Japanese","cost":600,"minPrice":150,"paymentMethods":"Accepts COD payments only","rating":2.8,"votes":345,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg","id":7},{"_id":"62875ae21ffce0581c52ef61","name":"The Pride Hotel","cuisine":"Indian","cost":100,"minPrice":150,"paymentMethods":"Accepts card and COD payments","rating":3.6,"votes":567,"reviews":345,"image":"https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg","id":8},{"_id":"62875ae21ffce0581c52ef62","name":"Hotel Center Point","cuisine":"Chinese","cost":600,"minPrice":50,"paymentMethods":"Accepts COD payments only","rating":4.2,"votes":745,"reviews":539,"image":"https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg","id":9},{"_id":"62875ae21ffce0581c52ef63","name":"Matoshree Hotel","cuisine":"Italian","cost":400,"minPrice":200,"paymentMethods":"Accepts card payments only","rating":2.8,"votes":145,"reviews":192,"image":"https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg","id":10},{"_id":"62875ae21ffce0581c52ef64","name":"Sangam Hotel","cuisine":"Italian","cost":200,"minPrice":200,"paymentMethods":"Accepts card payments only","rating":0.9,"votes":745,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg","id":11},{"_id":"62875ae21ffce0581c52ef65","name":"Haldiram Hotel ","cuisine":"Indian","cost":300,"minPrice":100,"paymentMethods":"Accepts COD payments only","rating":3.1,"votes":231,"reviews":539,"image":"https://www.themealdb.com/images/media/meals/1543774956.jpg","id":12},{"_id":"62875ae21ffce0581c52ef66","name":"Orange Hotel","cuisine":"Italian","cost":100,"minPrice":150,"paymentMethods":"Accepts card and COD payments","rating":3.6,"votes":745,"reviews":547,"image":"https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg","id":13},{"_id":"62875ae21ffce0581c52ef67","name":"Silver Hotel","cuisine":"Indian","cost":100,"minPrice":200,"paymentMethods":"Accepts card payments only","rating":3.6,"votes":567,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg","id":14},{"_id":"62875ae21ffce0581c52ef68","name":"MOMOS CAFE","cuisine":"Italian","cost":600,"minPrice":150,"paymentMethods":"Accepts COD payments only","rating":4.2,"votes":145,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/xrysxr1483568462.jpg","id":15},{"_id":"62875ae21ffce0581c52ef69","name":"CHAI Choupati","cuisine":"Chinese","cost":600,"minPrice":100,"paymentMethods":"Accepts card and COD payments","rating":3.1,"votes":345,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg","id":16},{"_id":"62875ae21ffce0581c52ef6a","name":"Taj Hotel","cuisine":"American","cost":100,"minPrice":200,"paymentMethods":"Accepts COD payments only","rating":4.2,"votes":745,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg","id":17},{"_id":"62875ae21ffce0581c52ef6b","name":"Marathon Hotel","cuisine":"American","cost":100,"minPrice":50,"paymentMethods":"Accepts card and COD payments","rating":3.1,"votes":745,"reviews":192,"image":"https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg","id":18},{"_id":"62875ae21ffce0581c52ef6c","name":"Univest Hotel","cuisine":"American","cost":100,"minPrice":150,"paymentMethods":"Accepts card payments only","rating":2.8,"votes":567,"reviews":547,"image":"https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg","id":19},{"_id":"62875ae21ffce0581c52ef6d","name":"Absolute Hotel","cuisine":"American","cost":400,"minPrice":150,"paymentMethods":"Accepts COD payments only","rating":3.6,"votes":567,"reviews":539,"image":"https://www.themealdb.com/images/media/meals/swttys1511385853.jpg","id":20},{"_id":"62875ae21ffce0581c52ef6e","name":"Radhe shyam Hotel","cuisine":"Indian","cost":"300","minPrice":"150","paymentMethods":"Accepts card payments only","rating":"4.2","votes":"234","reviews":"654","image":"https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg","id":21},{"_id":"62875ae21ffce0581c52ef6f","name":"Ramji Shyamji Pohewale","cuisine":"poha","cost":"30","minPrice":"25","paymentMethods":"Accepts card payments only","rating":"4","votes":"435","reviews":"234","image":"https://media.istockphoto.com/photos/poha-popular-indian-breakfast-picture-id501425188?s=2048x2048","id":1},{"_id":"62875ae21ffce0581c52ef70","name":"Mumbai Cha Vadapav","cuisine":"vadapav","cost":"30","minPrice":"20","paymentMethods":"Accepts card payments only","rating":"4","votes":"435","reviews":"234","image":"https://media.istockphoto.com/photos/vada-pav-picture-id1267018755?s=612x612","id":2},{"_id":"62875ae21ffce0581c52ef71","name":"Misal pav","cuisine":"vadapav","cost":"120","minPrice":"100","paymentMethods":"Accepts card and COD payments","rating":"3.9","votes":"635","reviews":"434","image":"https://media.istockphoto.com/photos/pav-bhaji-is-a-fast-food-dish-from-india-consists-of-a-thick-curry-picture-id1319403400?s=2048x2048","id":3},{"_id":"62875ae21ffce0581c52ef72","name":"Tadka Hotel","cuisine":"Indian","cost":400,"minPrice":50,"paymentMethods":"Accepts card payments only","rating":3.1,"votes":567,"reviews":192,"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGOlEHYTaUe6g7wTBlwcRu63Ykg-1thM_DQ&usqp=CAU","id":22},{"_id":"62875ae21ffce0581c52ef73","name":"Reddission Hotel","cuisine":"Italian","cost":200,"minPrice":200,"paymentMethods":"Accepts card and COD payments","rating":2.8,"votes":231,"reviews":467,"image":"https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg","id":23},{"_id":"62875ae21ffce0581c52ef74","name":"Le-Meridian Hotel","cuisine":"Chinese","cost":200,"minPrice":100,"paymentMethods":"Accepts COD payments only","rating":2.8,"votes":231,"reviews":192,"image":"https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg","id":24},{"_id":"62875ae21ffce0581c52ef75","name":"Tuli Imperial Ltd","cuisine":"Italian","cost":100,"minPrice":200,"paymentMethods":"Accepts COD payments only","rating":3.6,"votes":567,"reviews":345,"image":"https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg","id":4}]
+        "id":5
+        },
+
+        {
+        "_id":"62875ae21ffce0581c52ef5f",
+        "name":"Fab Hotel",
+        "cuisine":"Italian",
+        "cost":300,
+        "minPrice":100,
+        "payment":{
+            "data":"Accept upi only",
+            "card":false,
+            "upi":true,
+            "cash":false
+            },
+        "rating":3.6,
+        "votes":231,
+        "reviews":345,
+        "image":"https://www.themealdb.com/images/media/meals/sbx7n71587673021.jpg",
+        "id":6
+        },
+
+        {
+        "_id":"62875ae21ffce0581c52ef60",
+        "name":"Trebo Hotel",
+        "cuisine":"Japanese",
+        "cost":600,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+            },
+        "rating":2.8,
+        "votes":345,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/qrqywr1503066605.jpg",
+        "id":7},
+
+        {"_id":"62875ae21ffce0581c52ef61",
+        "name":"The Pride Hotel",
+        "cuisine":"Indian",
+        "cost":100,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept upi only",
+            "card":false,
+            "upi":true,
+            "cash":false
+            },
+        "rating":3.6,
+        "votes":567,
+        "reviews":345,
+        "image":"https://www.themealdb.com/images/media/meals/rqvwxt1511384809.jpg",
+        "id":8
+        },
+
+
+        {"_id":"62875ae21ffce0581c52ef62",
+        "name":"Hotel Center Point",
+        "cuisine":"Chinese",
+        "cost":600,
+        "minPrice":50,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+            },
+        "rating":4.2,
+        "votes":745,
+        "reviews":539,
+        "image":"https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg",
+        "id":9
+        },
+
+        {
+        "_id":"62875ae21ffce0581c52ef63",
+        "name":"Matoshree Hotel",
+        "cuisine":"Italian",
+        "cost":400,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "rating":2.8,
+        "votes":145,
+        "reviews":192,
+        "image":"https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg",
+        "id":10
+        },
+
+
+
+        {"_id":"62875ae21ffce0581c52ef64",
+        "name":"Sangam Hotel",
+        "cuisine":"Italian",
+        "cost":200,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":0.9,
+        "votes":745,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/b5ft861583188991.jpg",
+        "id":11
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef65",
+        "name":"Haldiram Hotel ",
+        "cuisine":"Indian",
+        "cost":300,
+        "minPrice":100,
+        "payment":{
+            "data":"Accept upi only",
+            "card":false,
+            "upi":true,
+            "cash":false
+            },
+        "rating":3.1,
+        "votes":231,
+        "reviews":539,
+        "image":"https://www.themealdb.com/images/media/meals/1543774956.jpg",
+        "id":12
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef66",
+        "name":"Orange Hotel",
+        "cuisine":"Italian",
+        "cost":100,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":3.6,
+        "votes":745,
+        "reviews":547,
+        "image":"https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg",
+        "id":13
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef67",
+        "name":"Silver Hotel",
+        "cuisine":"Indian",
+        "cost":100,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "rating":3.6,
+        "votes":567,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/kvbotn1581012881.jpg",
+        "id":14
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef68",
+        "name":"MOMOS CAFE",
+        "cuisine":"Italian",
+        "cost":600,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":4.2,
+        "votes":145,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/xrysxr1483568462.jpg",
+        "id":15
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef69",
+        "name":"CHAI Choupati",
+        "cuisine":"Chinese",
+        "cost":600,
+        "minPrice":100,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":3.1,
+        "votes":345,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg",
+        "id":16
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef6a",
+        "name":"Taj Hotel",
+        "cuisine":"American",
+        "cost":100,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "rating":4.2,
+        "votes":745,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/qpqtuu1511386216.jpg",
+        "id":17
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef6b",
+        "name":"Marathon Hotel",
+        "cuisine":"American",
+        "cost":100,
+        "minPrice":50,
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+            },
+        "rating":3.1,
+        "votes":745,
+        "reviews":192,
+        "image":"https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg",
+        "id":18
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef6c",
+        "name":"Univest Hotel",
+        "cuisine":"American",
+        "cost":100,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+            },
+        "rating":2.8,
+        "votes":567,
+        "reviews":547,
+        "image":"https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg",
+        "id":19
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef6d",
+        "name":"Absolute Hotel",
+        "cuisine":"American",
+        "cost":400,
+        "minPrice":150,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":3.6,
+        "votes":567,
+        "reviews":539,
+        "image":"https://www.themealdb.com/images/media/meals/swttys1511385853.jpg",
+        "id":20
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef6e",
+        "name":"Radhe shyam Hotel",
+
+        "cuisine":"Indian",
+        "cost":"300",
+        "minPrice":"150",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "rating":"4.2",
+        "votes":"234",
+        "reviews":"654",
+        "image":"https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg",
+        "id":21}
+        ,{
+        "_id":"62875ae21ffce0581c52ef6f",
+        "name":"Ramji Shyamji Pohewale",
+        "cuisine":"poha",
+        "cost":"30",
+        "minPrice":"25",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+            },
+        "rating":"4",
+        "votes":"435",
+        "reviews":"234",
+        "image":"https://media.istockphoto.com/photos/poha-popular-indian-breakfast-picture-id501425188?s=2048x2048",
+        "id":1
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef70",
+        "name":"Mumbai Cha Vadapav",
+        "cuisine":"vadapav",
+        "cost":"30",
+        "minPrice":"20",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":"4",
+        "votes":"435",
+        "reviews":"234",
+        "image":"https://media.istockphoto.com/photos/vada-pav-picture-id1267018755?s=612x612",
+        "id":2
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef71",
+        "name":"Misal pav",
+        "cuisine":"vadapav",
+        "cost":"120",
+        "minPrice":"100",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+            },
+        "rating":"3.9",
+        "votes":"635",
+        "reviews":"434",
+        "image":"https://media.istockphoto.com/photos/pav-bhaji-is-a-fast-food-dish-from-india-consists-of-a-thick-curry-picture-id1319403400?s=2048x2048",
+        "id":3
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef72",
+        "name":"Tadka Hotel",
+        "cuisine":"Indian",
+        "cost":400,
+        "minPrice":50,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":3.1,
+        "votes":567,
+        "reviews":192,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGOlEHYTaUe6g7wTBlwcRu63Ykg-1thM_DQ&usqp=CAU",
+        "id":22
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef73",
+        "name":"Reddission Hotel",
+        "cuisine":"Italian",
+        "cost":200,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+            },
+        "rating":2.8,
+        "votes":231,
+        "reviews":467,
+        "image":"https://www.themealdb.com/images/media/meals/sywswr1511383814.jpg",
+        "id":23
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef74",
+        "name":"Le-Meridian Hotel",
+        "cuisine":"Chinese",
+        "cost":200,
+        "minPrice":100,
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+          },
+        "rating":2.8,
+        "votes":231,
+        "reviews":192,
+        "image":"https://www.themealdb.com/images/media/meals/atd5sh1583188467.jpg",
+        "id":24
+        },
+        {
+        "_id":"62875ae21ffce0581c52ef75",
+        "name":"Tuli Imperial Ltd",
+        "cuisine":"Italian",
+        "cost":100,
+        "minPrice":200,
+        "payment":{
+            "data":"Accept upi only",
+            "card":true,
+            "upi":false,
+            "cash":false
+            },
+        "rating":3.6,
+        "votes":567,
+        "reviews":345,
+        "image":"https://www.themealdb.com/images/media/meals/ursuup1487348423.jpg",
+        "id":4
+        }
+        ,
+
+
+
+
+
+        {
+
+        "name":"Royal hotel",
+        "cuisine":"Indian",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Arsalan hotel",
+        "cuisine":"Indian",
+        "cost":"400",
+        "minprice":"320",
+        "rating":"4.5",
+        "votes":"940",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+        "data":"Accept card only",
+        "card":true,
+        "upi":true,
+        "cash":false
+        },
+        "reviews":"70"
+        },
+        {
+        "name":"Bapi hotel",
+        "cuisine":"Indian,chinise",
+        "cost":"200",
+        "minprice":"70",
+        "rating":"3.5",
+        "votes":"540",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdtXD_zvlgNrsdxajZOw1ZzlwblJSlluxYtm2lYhoPVJqalqK&usqp=CAU",
+        "payment":{
+        "data":"Accept upi only",
+        "card":true,
+        "upi":false,
+        "cash":false
+        },
+        "reviews":"170"
+        },
+        {
+        "name":"Barista hotel",
+        "cuisine":"Italian",
+        "cost":"2500",
+        "minprice":"1200",
+        "rating":"4.2",
+        "votes":"1477",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ_-A34094ZTVlQX_n-9mwj3ySRodLPEJaOq81OpjlTENT80T&usqp=CAU",
+        "payment":{
+        "data":"Accept upi only",
+        "card":false,
+        "upi":true,
+        "cash":false
+        },
+        "reviews":"4000"
+        },
+        {
+        "name":"Delta hotel",
+        "cuisine":"Tandoor",
+        "cost":"275",
+        "minprice":"140",
+        "rating":"2.6",
+        "votes":"987",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikhUZFoOD2GMwGmvsG5nlmiUhdMs6JPP6ou5GzjnN55OyTbi6&usqp=CAU",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "reviews":"1270"
+        },
+        {
+        "name":"Barbeque hotel",
+        "cuisine":"kabab",
+        "cost":"900",
+        "minprice":"500",
+        "rating":"3.9",
+        "votes":"217",
+        "image":"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhUSEhIVFhUWGBUVGBUXFRgXGBUYFxUWFxUWFxgYHSkgGBolHRUVITEiJTUrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAACAAEDBQYEB//EAEAQAAIBAgQDBgIIBQIGAwEAAAECEQADBBIhMQVBUQYTImFxkYGhFDJCUrHB0fAHFSOC4WKSQ1OiwtLxFnKTNP/EABoBAAIDAQEAAAAAAAAAAAAAAAEDAAIEBQb/xAAzEQABAwIDBgUEAgEFAAAAAAABAAIRAyEEEjFBUWFxgZEFEyKh8LHB0eEUQlIVMlOi8f/aAAwDAQACEQMRAD8A8np6VPSl3UqcCnFEKCtCQFICkBRgUFaEgKQFOBUlu3NRMhABRAU+WnAoKwCQFFFKKcCgrQmilFHFPFCVeEEU8UUUSW5qSjlQgVKBlHnSBj1qM1FIlNSinilFSUYTRTilFKipCaKUU8UooSpCaKktEDegilFFSFqf4fWP6168fq2bLkHo1wi2vyL+1ZjFXe8dn6sze5JrXcHHccKxF3Zr9zID/ptplB/33T7Vj4oDas9MZqj3boHa590BFCRUkUxFFOyqOKUURpqKGVCRQRRmmIqIQginp4pUVWFyUQFKnAorMkKcCkBRAUJVwEgKICkBU1lAd6CYAhS3NSsQNBTNpoNv3NMBQVwJTAUQFOBRgUJTA1ABRAU4FFFVVw1BFFFOBTgVFbIhiiVop4pRURyoTrSijilFBHIgilFGBSiopkQRSijilFRHIginAoopRUQyIYpUUV2cFwBxF+zYH/EdEPozAMfgJPwoqEBok6BaLtb/AEcHg8Nse7S4w/1XJuuD/wDontWNIrUfxBxvfYto2B0HTXT/AKStZkiiDZZsKw+UCdTfv+oQ0JFHFNFGU7Ko4oktzUi259KVxhsKKqQoWFARRkUJqKsIYpqKlRVcq5AKcCnAogKJKzhqQFEBTgUaigmtamAowKcLRAVWU5rEIFEBRAUQWgSmhiELRBaICniqymBiGKcCiAo1SaEq4YginAoykUoqsq+SUEU8UcU8VJVvLQRSijilFSVby1HFPFHFEFqSp5Siy1IiczRhQN9+lC7TUlDy1E2tNFSRSijKnlqKK1X8OcPOJa9/yLV24P8A7MO7Qe90n4VmYrZ9mwMPw3FYjY3XFsf2Lm09WuWx8KMrFjgW0CBqbDqY+krIcSvd5dd+RLEekwvyiuUipSKGKMp/lBogKOKJAOdPFMRRVC1NdOum1RxRRTVFTKgIoSKkihNWlVhRxSoqVFVhcoFSAUgKltJJqJLWoFFSAU7KOVEoqpT2tTBakC04FEFqsp7WIQKILRZaKKqSnNYhAq94T2UxOKtG9bCZASozNBYjeBB9KpkQyIBJ5Abk8gK9zwHDRh8NZw8/USGjncPif/qY1kxWINJkjVZcZWNENy6k+w1+y8RxOEe05tusOsAiQdxI1GmxFMAF9atO0d7Nib5GxdwP7WK+3hqrpzXEtBO4fRb2NLmg7wgpRRRSijKdlTRSiiilFBWDU0Uoo4pVEciCKJTFPSqI5EzmaGKvuCdmMRicpAyI0w7bGCBoBqd9zA0OulbHh3YWxbMv/UnQZ/CAV1YhUPiGnmI6zSn1mtWOtjKNGxMncPn7XmMHpTR5V7E/C8MCxNi0DBLBEQaban6qj8dYqC9w6wFANhI0GloFFncqSoBb0nelHFgahZR4k06MPf8AS8jitp2lX6Pw/CYfm6C4w5/1JufId2KuxwzDMrW/oo0aQNiSVglmUSoiNBppO+tV3ajB/TGDG9bR7a5O63OyidxlWFFOZiWOSauJbVq08wIaDJneB6dOq8/imirLG8HvWlzMnh6qysu8T4SYHrFcEU8OBuumMrhLTI4KMimIqQihIq0pbmKIihIqRhQkVZJLVGRQkUZFMRRVMqCKVFFNUVYUVu3NTZo0FC5GkU6ijKWxiSijAplFSAVWVpa1OoowKYCjFLJWhjE0UapOgEk6ADn5CnUVJlKmNQwPmCD+INVlPDFquxHZ299OtG9ZZBbm+cyFAchUgCRr4itb/jnEO6tXb25RWaPP7I9yKm7MYy8+FjEo1u8og51Kll0hvF1jUdazXb7ERhSBu91V+Cgv+IX3riYp5q16dM/N687mfisUA8AXDbGRE3IO2ZXmbSdTJO5nc+dNFe08W4bZxmBsKQJ7q1luR4k/piDI5dRzryHE4F7dxrRVswMFQCfiOoIgg9CK6bK7XuLRqPuu1gsY3Eg2ykbPvs67lzRSijZYMEQRuDoRTAU2V0A1DFKKtl4BfOG+lgTbkoSDJECSSOQnSaqwKEqMc105TMGDwO5DFPFEVpRRlXDUJrf9hexovIMRfSQSciMIBACw7feU6wNtJ1rNdl+GC/fGYgW0/qPIJzKjLpA5sSB/cTyr0y7xS+YFsi0sQFVRsPMjy5RWXEYqnSOV09NVxPGMU+m3yqZg7Tu4Wvf6c1oUwHhkAaiOmnKI22FQYm3EyG1jaDOo67AVnL5usdbtw89XJ9h77VzPcZBP0g2+kuY89zFZW4lhMNavLZgNT7ftXOLVhoVEaEzqDqNI57CqjFhSwLO8Akgz4oZpaJ0G/TbSgOLvMne3LqBA4RYGpMDbXYaGfOgXHB1FrMVZ1KuzBRBiZUbTIpReHOyi3zotlHEU+vb6rjv2wSxAYiZ8X29B4jrrpA+FRYe6SwgIogCFSCd4J1IJ0HLWu21aDsY8cKuZs5IVWLRA2mVGv7PHntkhu8yLDNmgE+ETCydZiPh7mmCHW2rc5zS3kut2BmSDJ02DLyJyiAyyRJGutZ7i3Arbk5ALThJyGQHO5ImRtI0OmXWuzCcTTLbZLFx3ZiGU3CoKkwoVSYDEkHl0mrkzcZlnJmWMuQmCslGkHKSAYO+aK2tc4JLKjqTszDH3/IXmmLwrW2KONo5ggg7EEaEHqK5iK9D4zwZbzZWtsLmQMt22hCPAJZNM2WNAAR0iBmrE8RwZs3GttvO/UcvcVsa+V3MLimYgR/Yaj8LgYVGRU7CoyKaCmPZCiIpKkmiIpjVpSC1H3IpVFT0ZVfLKgAohTCurAYN79xbVsS7GAJA5EnU6DQE1CYVAABJUS1Ki9KuMT2Qxts5TYd/O1F0H/ZJ9658CXwl61cu2W8DK+R0YZspBjUUsuBHpMp1N7Xf7CCdwIRcU4HiMKEN+0yBhpMH4GD4WjWDr862vYXhGGuYR2uKtx3YowO6BfqgHdT9qRG46VpcRfw/EcNmMZX91boejA1jbXCMTw2531o99Y2cLqcv+teRHJhI9JiuVUxPmtdSaQH7Nk8OHzVYxWdiKRpuOR4PIGNk7O+oCuuxvZkYbiRLANbFp7llvPMiwf9ShyPjNc/8AETs7iLmKW7YsXHDKmYqhMMrbnL5R7VrMBjFZUvWjmVhIPkdx5Hl8Kmx3EbmUm0QWGysYB9TBiso8RIjOPULHj89isLcTXGKFaATGW+nXdxXbcLG3LjKxVSRpoftD3NUt/gtjGL3d7MApzKVbKQYjePOrkFmWGYEkH05bVVkQT51gdUNOo17dk6/OKx0C5oOUwd42Ltu4FbNoJaHgUZQNNBHl71XYO2BfW8IDBTac/eT6wPqpHsT5VImIcc8w6be4qNtCDtO4qrqzg/OBwI5/tOYxwBDjMzffO9c3aXslaxt1LouKukXAACzjqJ0Db6miwHZHCrthVjm90s8+cTBPoIoFUqYDieldWHu3CYBK7/XlNvWr/wA5zgAQYGwH9A+6eXYhtMMbUMDTUW6RPXRWjcMs2sM1tEAtsTKgQDm8LCOQImsPgf4dwxuX7gCZiVS2ZZh9kFjAGnrW9x1zLYSdScsn4a1msHxR3FzSB3jKg11UHRj6ma01MY+i52X/ABb0ME/Pql4Kpim03upuiTcnXoTt1JOv1WH7b4SzZxAt2FKqEQsMxaCQSdSZ2y1QKsmBudAOvStJxrAXsXibzW0kW5DNMKoQQSSecg6b1ZdleA92y3nUOSneICYCGVyMepILkdMs9K3uxTaNEOqG8abZiYXqP5lPC4Vpe6XQLTcmJ78/ewVf2Om3cuqVhionQyMlxCwI5bTPlHOt7hbLPJBgKCzELOgH51wjCANngIIJZktzmESAZOrGBVv/ADO3bw4ezKhiQSy/Vy6MIIkiZE1ynVm4l/musAL7T04zHSV5DxDHDEvzhsHuNFXXBbZRcui6ACQuUjxAHcAEH8a5bF7CvGSwsmQucZnOupJMwN6p+KW2xFu8tu4xzISxCACJ+rKnQGDPkfWpuzjXBdDJbL2fDbDERqoRM0jckgkgTEGqBhe31GJ+ttZG28clzi1xbmHwK07X2CgCiFSAUVVAUSPF6mR8xWcx+Gurhrd4A3LhLEoCAcpbw+Ea6wTWnw9nGYi7ibeKIFg62FUoYhtNhm1GpnY7VT43swXhc5hSSDzExJHnpTZY18AiJm1xpJFj3B4K7aLyBAVbaa47Ja7wd61trxTOGyiIlhBBmAPWuNcdaKkAgt9bMsFVBOWGnUET/wBXKj4lw67bvd7btZWAZVIkgKZEA77E6+dZfFYI4dWK55PjMj7RHiHQLPrW6j6v7XPLjPHdCLXVqW+FqsbjrZtrltf1GJmAERRmERHKI1Osk7UuGcQMgq5AIYZPvzuJPLz86x/De0t22CrEwwAIXUN0zDpMGryzjReuLdtMiOGDZVGRdJkKPsg61tqUIWqnig6xW+wea7asLnbwQWZnUOBBWSV8J0JHLruKpu2XCw9rOpLNbZy5CiCTAeI2hp08mNDw/EqTlcHNcNwRm0y3iLhzZdhIUTymtNduC6WW2IDTeuE82JZUgEwSTbCnbdT50GVCCtNN5pVG1W7L/kdbheOsKiYVZ8Yw/d3riREF40jTNO3oRVcwrWCvXEBzQ4aG/dRmo2qQ0DUxZi26GKVPSqIZVzip7NwoQymCpBBHIjUGoRRCrFZ2heh8I7aIQM5yPsdDkJ6gjb41p8B2tQjL39tvI3FJ9ia8ZWpAa5L/AAymDNMlvJUfgKdXX8/O69zHELJBBsW/EZJQBZPUldzXI120D4LpQ9DqP1qg/h3wmx3RxN0sxzlFRXZVhQpLMFjNqYg6aVe8TfAnQuls8v6qn3DH8Irl4mmxr8rqgceV+sD8rkPZ5dQ02AmNd3aSrDhuMCKR3aFSSZQDc7kx1rot37TScgPoSCaxN3E20MLibRjpcFWOF4oR9cBh97n71mPmCCbjki7DbYIJ5rR2eJLmC5Qo2A6Gg4gkGRsZI/Oqu/cFwZlInnT8PxjMGU66Ag9OTD8KWCXNLXKeRHrb1H3U17jSWkyG2WfkZAEe9cHDuKG8zKwgxIHlt+lNirKu+syokAbNqAZmiw3D8zgoIYbD8vSrzmYGnWFpDKLWHfv+aLpfHMjLbRQWdgq6SZMc+Vd/FQ9m0WYrMqDDSdWA0BHU0jhfo7reZgWWYSNJKkfWO2/Sq7juFuukk5WP9QayG38M1AQ1oa6SZg7gDpsOv2WZpY97YiNpvcz0sBC7eNYvKluTpqfgJquHGFY528TaHyHl51QYvibPaAJ2ED0P+K5sLcJ0FHyS4Eu4eydTpMY2DxWvwF0NnbIqBmJCIAok7nTc+ddV76PZtEjwZVk6wGyhvCs7bx+VYzG9oltLkQ5m2n7K6fP4VmMXxG5dabjk+p0HoBoK00cFVqEl5gE3nU8t3O31W6l4O/E+qp6W68T05Wk79q9WwTM9st9a26hhMqNABKwCSI0BA5VTcQB+pnfKVzMLY8NvmMzg/aGYz7711YrtRaGGttZIEW1VVYbZRly6HQ6H1EVn+L8byoRqGZzcuAgjN90aeXL/AE1qpeHUcouc3TpaFw/45a/1NiDF9dbzs/cK2wfaO1bbuMLh71x2VXIh4ysAFZifCBBA1IqS5xPEglUS2mVfsmVWeUAak/Csx2U4kmGw9+7mzNcjQyMmUHIo16fhHLSDCdp7duzBe7cuSbj+ARmeM4UkagGQNt60t8MoTtJG8n9fNVM0XIF/m0lWf8+x6XQxCFV1OYhSwkCBDGAQdztNXo7WW7hIFllffu8ykkRMiDr/AINef2eLC4Tcvm4LaR4VIz3NZ2IIAmJ+RrqxmHtJme2tzvW8RYkEhk+qVWJC7yROtGtgGCzRHEC08b/tDzQTK1d3thY/5bT0JAqi4v2qTKS2Ae5b++jhhHmI0rKHipvs0ZWu5tFUGGUz4gTtyEeddfC+0ceGQh8zE/HalnAPYM2Wev4/CnntNgY+cVW373D8Rrbe5YY/ZcCP9wkD41xvh7lh/GdBqj6GRyEgAGtXi8DhcQGuXrAzCMz2/AxBMAyvhbWN+tVeK4DfwchIv4U/ZPIHX+xvMaeVbqVZhbAJ5OIPZ32KxVGGbi/BdnAeNDvAxmQIM7x0g6VvuFYwX7YGcB0Zso2BkEKD7gzyrzPD8KDqXsMXVd1I/q2vJl5jzFaPs1icjKr6k7H1jYeenypFUCZanYevHpch7cIO/DAAFkUkDkVldfgB8IrNNVx2mxou3yV2Gm8z4jJHlrVM1amle5wrC3DU2u2AIDQGiNCaaFVyGKVNFKilwoRRCj+jN92iFhulWKQyN6EVIKMYZ/u/jRjCt90/OlkFaWFu8d0kvMFyhmCkzlkwT1jaaET1ou4f7v40QsP938apdaWwhBrZdm+HRh2ul2BgkL9ncgaddN6yK2H+7+NbnDXAuGVettPw1+c0l7c9isXilVzKIg6n7FR8He8YuF0XqmUnT1mu/D5lu5g4jmAN/LeuXDXIGke9M1yJM/OaQ7B0zNlwRXMLsxHElF0eLkwIjkdtZ3p8Lx5bLq+ukgjKCWBG0kxvFZ9tCW6/H5VzXLnpH73FV/g0tyq6tmEKx7QdrbjsTlbL0WJHrr+FV+I7d3HQIJ0mCYMT5Cq2/d9v3saqsQBM8/3vTaeAobW/OKU+uQAGgQOCsm4pKhdfXSrHAY4lCmUQdDM6/EVlbb61aYS9Wk4amNiQMTUmZV5h+z17E3cti2SDrm5CfvHYc/OtTY7E4XCp3mLvFoiVt6L6ZmWSPSKq8Z2nxZREsRbRVAAtKR5anrpyjeq3+a3riq4BvEZ5PeEtMaSNZOp9hWCv5+jABfb8A7kjgvQVcRjXYam8vDQYFj6ja5JI14NvfUrU4jGYK2VWzgsO6SNbmUkSAc03J2+Jrn4u2FvsFXC2mAnSCmaI0lSCsiYg9PSszcuuyh8hGk+ObYA20JUncHcDalZu3AcpslhEkWnS4Y5mN4+BotwOKdDi4mNzhHYH8ddmF2Fwz5PnOJ3nfzIv3XVxFcCqG13l7BSdS47+2egJYhoE6a1WfyaxhnS8MbbuBlLIAIzCSubxPoJDRHMeVdCYgvHcOcskC3cYDkPsuAH3P2eXOqTj/D2u3O8uZg8BQGAyqqiFVVAAUDoBHlTQMQ05XuyjfFz7RHU/jO/w2oTDHAx0Pa/1RWsBdNxXttayuWKJcuZQSPCxUa5uWtWHEuyvErplrBIjTLctajcEHN5864LF5VtLaZ8uUyrOiuFkkkKxUlBOvLU10HE4hoY31cdfrSOeog/OrGvVB2a6mdNmlud0v/S640IPDb1UljsNiEuWri3LNm4CSVd87ArqIVAQdJnWu+92RXGXBd+k2UEBTKMFd4JYg5tCZ/ya58Djkwlu61pblzEOrKjXGXLbzAjQ+UzqNYAJiqvg/aQ2bb4bEhlVogkaq67Mp2PwpRqYt8uYdOAkjaYkmBs6rFVo1aR9bYHt9wtPb/htiVk2cTho+ypNzLz3EGuLiS47AXFS8iEXActxHJR43WCPrazB+E0/DePuoAhnnRTbBYN6HYeh1FW+P4ut2cJiMpmDAPjstrl6jON484POs7cQ/wA2K4Dhe4kEDf8AntqlPqBosVnb0NesugyudGCnLzI1I8vwq3vYQW7ZYK2UAr3i6hGIgHaYkx/mKobHDL9m9ctXWzMACjgHI6ScrKfgZHIzV1hsXClYLaAHXSOasDuD0ptdwa6NQN3cJDaop1hUNwDMXB6GNRqJtaDIMLNJZZ82VZgTzbTefLY1Ca23DMGi52UEBmzBJnk2k1Q3OzmIkwh39q20CaslgJC9zhvGqGIfUuA0EQSYJkXsY0NuUKjNCRVy3Z2+N0+dAez97oPetPlP3FOdi8P/AMje4VRSq0/kV7oPeno5Hbkv+TQ/zHcLWphx0HtUyYNeg9hXaMo3n5U+dB9th8BXRheAlRph1+78qnW2m2Ue1QNen7dMuU8x71FeF09xZ55fagP0dfsg/CghPvCkQtRWCZ79gfVtT61ycUGZFYCAZEdIP6RVggt86WNt2zbITl4v1/Ks+IbmZyT6LsruaoLLQP8A3Qa7nQcqdlC61FduzWOFrzKDENNcF+55z8damvv0OtVt+971MqGdQYm55/vzFVty5U2IuzrXIx/WmNbCU5ycNXfgm1FcFvea0XZXhLYq/btKNz4j91R9Y+3zIq2WbBKcYWssW8lm1MLOUu7GFRS2sn0rcX+G4LEqpe2jCAQykrI3HiQ+Ic6x/EOJd6VtG2O6znKsbZc6AEcxEGmXFG7pbvupZtFnKCFnNAgxtXErsqYh3m03xBIAMwBbdebDmm0GCo0kla672csFW7lVkiPFmePLKzbe1Yri/Yu+rsyWFcA+Hu7htMQeTeJQR571He4ljbJDWcZbbqLqBgdeTJEaa/nUlv8AibeUAXbNxWJygrLIxBjwsdRryPuYqrWYyjGW54XH/YtcOUlvBNDS11j3kfRC3Ya+9tJbu2IYZAe8FsD6qux0YH1MSazePw2Lwjm0+Tb6rBlkciBlKbVph/E24upsXYOx0JMGNBuee1SH+IlpgM4KzqM6j86YMd4jS1pk+33d+t+5zHubbOPnMSsK2JW4wVhbBI5EL7EEAnyy1yXsHklkY2z5RDcvsmD8RW5xXaC3c2Sw/MAohPrBFUHFf6jF8uRjuVgD4janUseXmKlMN5H7QPom+fUH9gR87eyoDxR1H9RJH30/MbfhRDFLcBCkMOaH80NS3Y2gN52zB+K7VT4rDkt4QfKQFPvW1tOi+7bKHxNzbGCNx177esruwLiy8q11AfrC27KG00kAjnGxG24rv4bdUN471kEncW2zGTvqg1/u+JqvwmCud3muiDmgSRJEbwDqBG/mKVzhdxgSFzRrA1MDU6c/hSalOm8mXdbHTiQVzcQcPVMt9J+dF6WhRrYt3SSAQFuLqVJGh9DppUC4Qq2r22WQTlYax1Q7GsjwniR7pcjjOmgBYHOhnwxzykyPItXS2PNyM1vXqDBrAcO5hLXXjTZ8C5TiWnKVvMPcQRkKjy9eUVYWS7AEMpB6fh61k+zhY3EV1OXMCS8agcvOa3OHtWlELoJJjzO9dnwkPLHaZZ6zA9kW2ChXDk7ke1F9EHMD2qdFQ7N7VJEc/wAK68KZyuT6Bb6CnrpzHqPlT1MqOcrMd0etEMOf2KkQjePlXVauTypEq64xhfL5U7YQnZfaBVqmn/qn7w9J+MUJRlVP8uc7LJ9fyo04dd+6fcVY3LpGy/jURxzg/VJ9Aakq0lQ/y+7zHzFMMIV3LekfuanbHOdlYeUT+lQsLjdfQgD86kqwJO1Z7idnu2I5bj06HzqmvvG1bK/w9nUgj/FZLH8GxSk/0gR/pb8jtWR9Eg+laW1m/wBiqm/emq++xNd17huKn/8Anf8A3J/5Vy3OHYvlhrnun/lQDHbkTUZvXIR86jI+VdLcIxx2wr/FkH/dSTs5jm3sx/en61by3KhqtXPh1kgVvuzhsYdJa5/Ubcqw8I3C/rWbwXZ7FJr3Y/3L+tdn8lxJ+yg9WFOY3LdBpa/UrTpdw3hYMHfPIVm0ifCABu2sa84qvxvDDh2L5gCwJGYE5MxUkGJI5yR5b1XW+z1/cuo9JNbvs1gc1m2rlS6ZlLGSSJzK87yAY/tG1cbE4M0D5lEm5uCbX05RfZN9d92NymWHuvMsfduW8rXUju3V2GmWD4oMSPEGG+sGrPA2hnW9cXKAxUkmRbzhXACqD4o0mOZBOtbIYWyr3bd2yzl5UtmJLgaxrykD1oWwWDCsjYdszAZszOAwHOM2hE9JpP8AKfGg+ai996fkrToIWe4xZthZWCCujCCSOW2k66nymse+IS2HAJdvkJnMNdY/zW6ucAtXJCO65j4SCGVSRAG41ncmfzrLcR7JXVPguK/U5SIjfXp51roV2keqys8uOxZPGXMwE21B+8Inf9j4UNvCApmOcgaEba8v361dP2YxRH/DA08UkmDziN667fZ9rSEGGcggMToNNGgb+k8tTrA0uxLGDXssTgQZIXFhMBbsJdt3Htrdm0+VZLKALmZTy+2hOvL0rlu4uCFUZ2J5cv8ANajhfZ+9l7y5jYC6kFsg+MGbh6DU1zXcPbDMbSZASxn7RBJ08vhWJtcOc6b8dmwWsD9eaUymXFVS4O6BLZFnYTJ/91YYDH92wOUgqeW1FbwoFRYq1E5efn051V7hUsUypQIFkN3h6szNagic2UaNaJJPhA3UdN9uk1IuLeI0nbNAn3P40PBQe+Rum5jceflIqdyTfuZvvv8ADxGBVHOIOU3gT9lhe26scBacnM5JIBIBJiQJAqwu2lJBIHtv6+dS2wjWwJynrGaI8pprCAN42XL8Z8jBGhpNLB1q8PaPSbT+tf3KESJVhgLvdg+Ico12A2FTfTWP2q4u/tDYz/aKB8YnKPlXqMNQFCmKYMx/6fdWVh9Jb7w9xSqr/mA60q0SotmuDAohhxTj0NGpFIhWlCtgcv1oxY6fjT5x0o1I6UIUlR90ac2yPsipSw60Bb96VIRlBHp7UJUHefnU8+tPl/c0IRlcowydD7kU64VOS/OugqOppFRUhCVznBL5ew/OozgE2/fyrpJH3qEwdjUUVbc4WvVh8agOAXqfWauDanf8abuVqQoqR8GOTCPKfagGD6T+f4VoO4XkKbu/QUIRlUgwN0/aj4/lU1rBXVkq4zHy0/H9yatoHl7UWaOdLfTDhBTBUcDIVM2MxEKL+FzQxJe0ysPUqSG+ADUd7ieHduQcLIVz3e0T4Xg/Dyrve6AYzD0iguOpENqNoMwfUVjfgGO0Me/1T2Yx7dbqltYoQ623zG6wAgqFymBJJ12MaeVcOKOX6sEgsCQ0htdNKtL3CsKTratf7E/Sue5wXC/cGvKSv4RSR4aRo753Wj/UGnVqp8U0gkaee0+onWqO++/i9eXyrTPwLB6+BhHS7fH/AHa1w3uzWDOuS4Z6Yi7/ANzVduAeP7KrsbTP9Ssw2LymNCOtQXeJqOYrUf8AxHA87bj1vMfxNHb7GYI7Wj7tThgADqkOxs2AWNPFV61H/Mi2yk/D9a3tvsjhRsjD+8x+tdFvs7hU/wCFPqzH8ZmmtwQCS7GErG8PxxSTl1P4dK67t1bjl8pBaJHnGpmtrZ4fhhtbSpvo9of8NRVn4JtSM2zd7rOawNyFk8NfgABSPjvU4jzrRNhrQ17tfYfmKRtINkT4ACtbWZRAVTUCzkClkBrQG8BoSPIfltTm6vlTYQzFZ7uB0+R/SlV73q/sUqimYrSq3rRATz96VKkqycLRLSpVEUz3I3oDfG1KlQRRhmNHPpSpVIUlF3ojl8/0oGxCjcfKlSqIKMuOSj41Cl8cyfgI/OlSqIo0uKdi3rTq2sD123+dKlUQTlmoXuMNem+v7mlSoIpW7xbnoeetR96JMk7xudaVKopKd7BP1SOuv6VBdtMurHfSREfrSpUYQJKguYcwCDodZ00HtTfRCTAiToSflBpUqICBcVCuA3Bgn9zGtSrw60YOaCfCBLb7xMGNOmlKlVoVZRW+EW2Yr3pBHTNvPQ6VN/8AGpkrckjSSNJ5+dPSohVJIXNiOENbAk6kx9ZvyNQmyVmZ0OvjaP8ANKlRKia5bjUTMTE8vwqBsSYncTvqPhANKlQUT98D0689OtOQvnB8/ntTUqKifIp6zz6fjQthgdqVKiFCg+gjp86VKlRVZX//2Q==G1DQNlJPtHSvpKoj2sia3jBBUzB7FvgS0LNfgxCO0SlxZyNmfX0jQjnGUAoJbbMgsiqUkweoyFgEjK13UFZSl92uxNnECpFC+sM+F4eAg58qkqGVKgoFcsvYmX4spNj56xV+VxtqrteQEv1MhKw6AynuHsfeK1QsqSDysfIaQTrJBQdMqk2IY6jnyMU6tI1Gig58x+xHMcumOYA8FDSVToKTt8jAqomKQp0kg3H7+ET068q76bxtiiQokgM926j/AB8oZYA1/ehYiXpIQN21UaMUXlF/heKS0lSiSrW7nWNUGLdLLClBJ3MHa1rTYLPke6RlSdF7TYfNcKEsqSO9tlI1310NoM0UgqIUPMGGyVw9NVTKEoHPLQVhvvJ++kdW7w6pI3gbwAmWud2E1hn8CjoCdUxaOubrWQiAY8zdRqgeJSFU0xJKErlTBmSFh0kAspJIuCk8i90neJFYN26Vz5UoiW/e0aWToO6AG6t56x3bibgGVUUBkoSBNR35av6wGIJ5KFvY7R8/TZUyTMIulSSQRoRsQR+UVkaf2oBaaVCr1OEqSCXDCNqWlkuM81huQlSvgNYtVtQSVKcsoO3w09IGplEmwgbXEtq5cwuNhqmHDqOnzMJsgAKT9pMTMOYFTOJfQajrFjF6mTKeXTgTZmZ1TiGl6eGXL0YK0UXs0CcNwtS1Dn8BDlRcKkjvJUXe4G7aCF34hoOVuqfjwbtZDySt/Hp41mA9WH6RkGlcOy+o9I8ivzKv8sP9R4lJ2Hi3rBempyr2gbhUu7dYc8FpPCSHgeKkylMNbZUaPCCtgEkklg3PWJsMw4yqnvDL3Tr5gH4wZVMKQkJCQSqxIJDjoL+kZhWG9uSqYo3N2GUdbC8IvnAjJcdbJpjHZhlGiN0WJS0kB3N7JTmdW3++sDuIZKgLv3nUX/qMNmEYBKlywR4iW126xexDCkzAUkAiwEUYD0YHdTn/AAqZhmOZcPqUqQSU6xXOJDmx5dY6VUcFJUo5VH126vCFxRhCaeaENcO52N+UOROa6zgrklo6pQYBalZ1XP70g9hMsl7PYxSkTgBBfCZjKBAjsQ85dFzG11Qw4YZeXMR3g9i7eZ59IvyZKBKK372hB06N8Ys4/l7gCWN/aA6EOcvrAw8ytzaLgwRnKiuEyndR0/KD9IpilmI1OtjAWjtpofkIJUlSGcbuBY7WOusJTDMSUUCgom2nmSahHYT0hSTcPzbY7GwiniuFS0SygFJTlLB36e8C0TGJIU+WwiDG8Uyylh7lg55vtFWSPIDNTWxVcgBrtulykkcw3WCkuSAHAKVhtNweaeXlzEU6GfmQE7jTrp+/WCctYWRpmA3Zi2jueQb2h1xvqhAEIVjFKVFZBdNruNVJBH+ukBVYfN7BU1nlpUEkvoo3FvKG2olqIWySUpDE5XAazE9D8IVcaUooGUsNwN2difct5mGYnXvuquuKIDUou40MYS46iNpZzBt9R+Y/P3jeRIe3tDwB0ShKrGm7wI8JuOmxHoYtVVCpAStu6dDyULt+fvyjyScpyqsHfTRWnxHyEH5NUlcoylgMoC42I0I6j9ecNMZnbbVJOd0b+wrrH0Q4qmopwmwmSiAocxsf3ygDx/wL2E1dTI7stXfDDwTHBKf6Um5HtAT6Nu1p65CkqTlV3Vi7KBI22Ij6CWgEMQCORuI5wJArYqgcGOOW4S39H+NKq6NK1ghaCUK6lIFwdwQRCX9L/BeYGtkp/wDMkf8A2D8/fnHVZaUI7qQAOQDD2EbKQFAghwQxB3B5iOoqg0XznwvLpTIXLqpSi6+6sAAgMHGbxbGwtf1iyvg6WVPTzhMRyIKVJc7jeDH0g8ImkWZkt/q6zYfgUfueXI8rbXA4JihQpi9uRbyv6xkYrpWV4dnBegwUUL4wWoh2QpFmWo3GrAcrMYqTMdIFiRu7/nFjjCcFtMBSVMCoo0L8xsobwFouH6qf4ZZSPxL7o9HufSFOiYTmJoO1FNRZeTsdmEl1/Ex5ByTwFVZR3UHrld/WMg1Y+3zQKpPwOlBUoks2g8gTDvhYsi2hP5wo4cooWW6PDfSTgE/8ifh/mB4h/XqVVo6tlb7WUZcztUZi+ZIuwUS22uo9AeUXsMSAmzDpA+bM+wJv35rMRYMMzvudtIKYFKSMpX4d+sZ+MBcxjfdzunsNQBzj7pwTNhFK6syrgAW84Jz6dQugbnu7+kUZ2OSGLWZm69I0RxChaglIu+oh2M4WKLIHDvGtUg9k73Zsp7jopqnvDkGL+v5xx/6Ql/ay0qLkId+YdvyjsWIuxUTZW3WOEfSDVZ6oBwcqBpsSSSDExguxTQdgf7p2okNOjPeEJE2zNBLBZ/e1gMkRbpAXhyRgLSEZgoUx47NAKD0ilQS7kqBc6fKNMTqPAjUn/EEqFDEFnhIdSIBWc0GQlbIkkAtoIJSw4CdSB6C5+f5R6VAuGAcv5RtSVXZqBF315EHZoVLsyiisS0pSA6nJ2yksOeohe4uJShywClslt2c2fQecMX1mxI3I7pA26wjcbYv2iwhnUCCVehsG8xB8HGHyCg7UOR2UGq2oJ228F5SibjUa+kLNFNIZ3B62g7Jq3+ALwxPHQqG1RmVWqAKErKUrdxmLAkXLdR8oD1eHKmOwu+mjemjO8GqUgoUm/ZrN98qmsR8n9ItSKcMD0Icbp19xFBKABU+/RVy60C5XVyVS1EaEG0EKeUZie0Qk28QF2PNuRhr4xwlKpJnPdAAfyYMPm0JuCYgqTMBBZjr8Y02Sl0eZuv3SzowXUK1qA9zG8qdl0gzxEmVNHbyVXUftJdnCiHzJ/pN/Iwsu0OQSBzahZ+IjIcj+H4wqWoKGsdKwH6VFsET0BQ0zAkK/QxxlEyJkTjBnXS1OC+ocMxylnAKlzk32UWPkyoKTcRQmxcekfLNNXqFntDtwzxMtJSiYpS5JYKSS7dUk3HpAnOI1RGtqF2PFJtPPkzJcwhSFJIIJ9m5F9Oscrw/6Nyohap7oJLABiUg/eUSwPRov8RKVIyTUTM8hfhVyP4VcjDVw3OSmVlOhGfTTMSGc6XBgWJY10Vc1L6pjCzyRuIaoKPhyRJDBAWoDVRdQa9iq402EEaam76QpIuHcuSLOxAsNtSY9nV6UsEqIJPhQO+rzU0BsRrpiiVFpdmv4i2jtf3jCkfDH1tacL71uT+T/AC+1ssmp141r77k0KSrZYbZzGRz5VYHusmMin+SH+h/9j6InyDv9v/lc2IAmsDYwbmzWJ/e0LtLOClJUOcGqhYyPvvBZhcBMRDcK5SVfaKCBoLnqo7nyvfrF2pUZViYB8P3zK6sIKY3IWpIIctrCkoHS5Tpojs0qFGurUre0XsHnFKxcwtyJ2zGDmFAjvEGImjysIRBxqnw1IUhKcxBJA8ns8cs4o4HmS1rmS1Z0OX1d3vHQ8IBmzUban2gqqnTMCXBF1q82LekEwj5GtLm66d9ALeaUeGtdT3evouBLlFNiCIkQpmh141wVRmpMuWpRUlJsk8t4Wq/hmsRLMwyVZB4lJZWX+4C4840Y5myUBIB4VV60FVWovtZ2b8IAEM9J2gUwLJNiG1EA8AlZUAsX39Ya6NabEvYfHpCuJeM9NhZQK0rxWIku7XctEy6dDG2g+P6R7LmpBAU53sYxa9juYQzUKnKaKKcrKnYW+cAcGw1CJip6wTMUolLiyR0HPrBPEZugGpPyjRU0IRmU/lz8jBmOc1hA/cuyNJBdsidbWSewdckTbkCzlndypnSBCzSU4Uv7NKg7kJNwQASwUdS0X5PF4lEZQEgbD93gfiHEBnzFVAqMq0sSPDpYBGXUw1hYn0IeCOe34KQx8r2PDo3cvd0Vpago7q0KSFcwQ46PrBzAKdJOQKLIDpfdms/70ith/HciqkfV6srKhl7KaiW6kqA+8z2f35RunCp8odoZaigHvLQ4dJ0ORXhOm0FlwjhQsNRw0Q2fEBXrtI7RdD/pBVMNOpEpsiCntBqTqoqB5As/SOYy9Y7nLwRkBSZiZqFk5joWNi4e+rFtPWOGVKMkxafwqUPYkQfB5xmY9tKX8f6RnPY6jmmq3nKKWKSQYnp50tYZXdVzGn+IHrBMbJkmHtBqlnAEot/DCfCpJHnG38Hm7Mf+Q/WB8lS0+FRES/WV847pXjgfJBdh79RW/wCFTgfCfyizh4mhYSEKJ5JBJ9hA+XWr6xakYgtJcEvz39xcRDpidR5qow72mpCf8NqFCWUzu7KbvCb3B6BTEnyvDFglbTT1PLmKJCQnKxClFIZ05tjY6PrHNDjxmpCZpKlZswWohStGbOp1EeZh84DlSZ81KSMpFwXYn23gbcNHIwtdU3rfY9yhsjonZmo7ilYtFkyhKDalsxHU6wt1NandRUfhDLxhwxMQkzZDrSNUb+nOOT1mLm6R/qMafBS9JR2m3DyA+1eOy2MPNEWVbz4o1MxS50jIT1ViucZF/kgi9KOCf6T6N0oU6aglrsUhvgYrYvw4Ug/aA/8AGG+ZW5XYi+sL+I1mbW0Lmd1i41cojaRYaIDQScjIB84c+HsT7I2CVAhlJVoRCkid00OsTpnB3BaBvL8wc00PFMNY1zC12idKjCaOeSqWkSZh+6fAf7Tt5QAnkJ7o2LesDF1qt1H1iejmZi5/ekRJI4jMQK8Rvy9PBQ1mXq5iR2+vqnLhWVlmpzpLZCUepueu8M89CcuaWEkdmdBq5e3tAehUFlDWyyWiSpkn6sVCYpJQMzDVWojTwpyRlrbi5raug/nwWZO3NIHE00G9Pfqq1ECs5z3vwhWwGg9oFnG3K5SkpILiwY5Ts8XOE6oKASrRtYXOJMOVTzjqUquk/kYzAXuiD2mhqa9/pTTwTwDBKWPHCiKYZgVPLUCnvfeSk+EkXyqML1ZTJB7oIcmx5aiCmGYnlHeiDEMWQVDPcj9tA2YhxaWObzH8nwROgeTUGumqFKQLncm3SJF14QrKpCVNZ9X/AHziz/GZII7gPpFiVXU69ZIfY/5i7Tu4URegeO1A6soStIWSHAJAZw+3s2vOFvHcUKiQSWBZPltaHecmQFhXYpPneCB4Fp5x+tCXlZj2YJIO+ZvyhvDPa5xOUmg0S+JjkY0VIFbLk8rhupnDtChQlau128oZeFsDkJXlVJ7VJ3diC33jsHjoVDWSkFSFhwzJ5A9Ryj2uXIEtBkgBb99oscdI+PNYU/bXgfOqSd8O/wD1AJNO73T1VqXw/Ty5GSVLzTFgMsJyhxu5g44+rZZgyqSnLqzt03EB6fEJ82WpKCAQGS4b47GFjEcfmFhMN0W/3zg8mJyjOATUUFqD1tqrxYL9lhQ14n2dEbkTCMyUJSoG5SQ6S3NO3mIW6Xg2jqpkyXUjsZ0xRMqYhTX/AAkGx2Zw55xXTjygRlfqecMkqoTNlJcB93+B8+sKYfFyQUMlwOP24+Z5IuL+HB/Xjsez8j0S1/7OZCBMrAhSicoVLsWP4szO12jY/RSSool1aJhGuWWph5qCmfpDPOxOrEsygUTpagzzHKwDZiQe8IuLWuVTrmTSWSQ8uQhKVJBA0Uq7EX1vcRrxzxz/AKd/fh70WLIMRF9dlzaq+jeqD5FyJjPZM0BVrHuLaFvEcInSLTpakEu2Yatqx3jpHFeLLSMtMZakTAlQWvK1wps4NwqyhlYCwfryybi61EiYxL8gA/O2npEDMainmqx4p1biqhQnaLMuXECFudG6Rdpg8RJULTjkDm1BUcykfTXlFzBMVXImC5DGx3BgzhFAFKDlog4owfspoy6LDg9RAocWA/KqTYYPFWrtnB/FaalARMbO2uyv8wk/ShwT2ZVVyE9wl5qQPCfxNyO8KHC+JqkrAJZj7R3Th/F0VMvKpiWYg/eEagpI1ZwJhfUL5nUBHsdgxP6JM81apU7Igl0p1yvs/m8ZAflu1N/NtQuebDygFWaxkZHlYfqW2oDrEqYyMhlykKrV+MQawrwnzEZGRTE/phQzVdFwxIzpsP5QiPGD3E/+NXzEZGQ9/wBOe/8AIWcP1kvYD+nzg/x2kfVkW3EexkZ+C0m7gj4v9Vneuep09YB4pr6x7GQTD/WtAfQFpJ2gzQR7GROI0RdkTrB4fKDtXOUkoyqI7g0JGx5RkZE4fV3/AB+6Wn0HP7IRif3Y3w38x84yMgA/UHvZE/am/DkjNMsPDHLuKf5p/e5jyMjVl+lveUlB9buX2UGFQ3YKNI9jIyMR9fNaH7CiZ8cBjVzEVyQha0hSkuEqIB7x1A1jyMhj4V+uf/L1WN8T/RHJB+NFkzpzkn7SXqX5xzPEP5yvM/OPYyNqL9R3NYLVapvAPOL48UexkCk3T2B/VPcm3BdBDJ9KslIFKyQLJ0AH3TGRkZ8X7/8Aj+Vqu+pnP7JArP5yf7R8jHR+AVHPLvyjyMjbwWnILJxa6rGRkZDSUX//2Q==",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "reviews":"370"
+        },
+        {
+        "name":"ITC hotel",
+        "cuisine":"Indian,chinese",
+        "cost":"1600",
+        "minprice":"850",
+        "rating":"4.9",
+        "votes":"98700",
+        "image":"https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_737.jpg",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"147000"
+        },
+        {
+        "name":"Badshah hotel",
+        "cuisine":"Indian",
+        "cost":"100",
+        "minprice":"20",
+        "rating":"4",
+        "votes":"987",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbtkbaieFACyDwNNk4r_gM8hSOYtm2lTlduw&usqp=CAU",
+        "payment":{
+            "data":"Accept cash only",
+            "card":false,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"shiva hotel",
+        "cuisine":"Tandoor",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYBwQsoHZuetr8wrQprn_1pUd5d1JTvcuzQ&usqp=CAU",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Aminia hotel",
+        "cuisine":"Indian,Tandoor",
+        "cost":"870",
+        "minprice":"250",
+        "rating":"4.6",
+        "votes":"936",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6NMRD1rufN1GQi_x_dZrB-h-8OcOldgnrbA&usqp=CAU",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":true,
+            "cash":false
+        },
+        "reviews":"2700"
+        },
+        {
+        "name":"Radison hotel",
+        "cuisine":"American",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLkvAN0UiSUrlL2mpu2mg4PW19CT0RQhPLMw&usqp=CAU",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Barbeque hotel",
+        "cuisine":"kabab",
+        "cost":"900",
+        "minprice":"500",
+        "rating":"3.9",
+        "votes":"217",
+        "image":"https://palamurugrill.com/california/images/gallery/5.jpg",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"370"
+        },
+        {
+        "name":"ITC hotel",
+        "cuisine":"Indian,chinese",
+        "cost":"1600",
+        "minprice":"850",
+        "rating":"4.9",
+        "votes":"98700",
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7J3Pipc_J-K2EL3Weid2a6AjfvMK1wbS_A&usqp=CAU",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"147000"
+        },
+        {
+        "name":"Badshah hotel",
+        "cuisine":"Indian",
+        "cost":"100",
+        "minprice":"20",
+        "rating":"4",
+        "votes":"987",
+        "image":"https://thumbs.dreamstime.com/b/indian-dal-traditional-indian-soup-lentils-indian-dal-food-traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-indian-139348337.jpg",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"shiva hotel",
+        "cuisine":"Tandoor",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+            "data":"Accept card only",
+            "card":true,
+            "upi":false,
+            "cash":false
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Aminia hotel",
+        "cuisine":"Indian,Tandoor",
+        "cost":"870",
+        "minprice":"250",
+        "rating":"4.6",
+        "votes":"936",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"2700"
+        },
+        {
+        "name":"Radison hotel",
+        "cuisine":"American",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Royal hotel",
+        "cuisine":"Indian",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"data:image/jpeg;base64,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",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        },
+        {
+        "name":"Royal hotel",
+        "cuisine":"Indian",
+        "cost":"250",
+        "minprice":"120",
+        "rating":"4",
+        "votes":"987",
+        "image":"https://drop.ndtv.com/albums/COOKS/these-5-high-pr_637866490576524858/637866490576524858_640x480.jpeg",
+        "payment":{
+            "data":"Accept cash only",
+            "card":true,
+            "upi":false,
+            "cash":true
+        },
+        "reviews":"1470"
+        }
+
+
+  ]
 
 }

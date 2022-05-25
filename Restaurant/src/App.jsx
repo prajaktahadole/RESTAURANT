@@ -27,7 +27,7 @@ function App() {
           url : 'http://localhost:3004/food',
          params :{
           _page : page,
-          _limit : 5,
+          _limit : 10,
           _sort : "rating, cost",
          // _order : ratingOrder                   // for single
          _order : `${ratingOrder}, ${costOrder} `, //for multiple component 
