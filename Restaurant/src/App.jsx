@@ -12,13 +12,15 @@ function App() {
     const [ratingOrder , setRatingOrder ] = useState("asc");
     const [costOrder , setCostOrder ] = useState("asc");
     const [filterRating, setFilterRating] = useState(0);
+    const [q, setQ] = useState("");
+    const[text, setText]  = useState("");
  
     useEffect(() =>{
-      fetchData({page, ratingOrder, costOrder, filterRating});
-      }, [page, ratingOrder, costOrder , filterRating])
+      fetchData({page, ratingOrder, costOrder, filterRating , q});
+      }, [page, ratingOrder, costOrder , filterRating , q])
 
 
-      const fetchData = async ({page, ratingOrder, costOrder , filterRating }) =>{
+      const fetchData = async ({page, ratingOrder, costOrder , filterRating , q}) =>{
         setLoading(true);
         axios({
           method : 'get',
@@ -29,9 +31,10 @@ function App() {
           _sort : "rating, cost",
          // _order : ratingOrder                   // for single
          _order : `${ratingOrder}, ${costOrder} `, //for multiple component 
-          rating_gte : filterRating
+          rating_gte : filterRating,
+          q : q
          }
-        
+         
       })
        .then((res)=>{
         console.log(res)
@@ -52,6 +55,14 @@ function App() {
     <div className="App">
      <h1>Restaurant Details</h1>
      {loading && <div>loading</div>}
+
+        <div>
+          <h3>Search</h3>
+          <input value={text} onChange={(e) =>setText(e.target.value)}></input>
+          <button onClick={()=>setQ(text)}>Search</button>
+        </div>
+        <br></br>
+
 
       <div>
       <button disabled={ratingOrder==="desc"}
