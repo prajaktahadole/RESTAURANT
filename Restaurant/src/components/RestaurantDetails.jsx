@@ -16,7 +16,7 @@ function RestaurantDetails({
             <div>
                 <div>{name}</div>
                 <div>{tags}</div>
-                <div>Cost rs${cost}</div>
+                <div>Cost ₹{cost}</div>
             </div>
 
             <div>
